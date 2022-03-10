@@ -35,3 +35,5 @@ flowchart TD
     newer_than_ubuntu14 -- YES --> ok
     newer_than_ubuntu14 -- NO --> action_required
 ```
+
+**Note:** for action required, it can cover verifying the SSH key type.
