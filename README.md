@@ -18,7 +18,7 @@ flowchart TD
     key_exists -- NO --> ok((OK))
     key_exists -- YES --> key_type{What key type?}
     key_type -- DSA --> action_required((Action required))
-    key_type -- others --> within_window{Project created between 2021-11-02 and 2022-01-13?}
+    key_type -- others (including RSA) --> within_window{Project created between 2021-11-02 and 2022-01-13?}
     within_window -- NO --> when_created{When was it created?}
     when_created -- After 2022-01-13 --> ok
     when_created -- Before 2021-11-02 --> action_required
